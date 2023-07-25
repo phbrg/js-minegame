@@ -6,7 +6,7 @@
 
 # 📑 Link
 
-ex de link: [ph-cryptogame](https://ph-cryptogame.vercel.app/)
+[ph-cryptogame](https://ph-cryptogame.vercel.app/)
 
 # 🔢 foto
 
