@@ -330,6 +330,8 @@ main h1 {
     justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
+    height: 80%;
+    width: 70%;
   }
   body .mine-container > * {
     margin: 3% 0;
