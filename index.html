@@ -1,0 +1,130 @@
+<html lang="pr-br">
+    <head>
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+        <title>Crypto farm</title>
+        <link rel="shortcut icon" href="./assets/img/" type="image/x-icon">
+    </head>
+    <body>
+
+        <header class="header">
+            <p class="logo">Crypto <span class="colored">farm</span></p>
+
+            <div class="wallet">
+                <p>energy: <span class="energy"></span></p>
+                <p>clean energy: <span class="cleanEnergy"></span></p>
+                <p>half coin: <span class="halfCoin"></span></p>
+                <p>coin: <span class="coin"></span></p>
+                <p>level: <span class="level"></span></p>
+            </div>
+
+            <nav>
+                <a href="#">HOME</a>
+                <a href="#store">STORE</a>
+            </nav>
+        </header>
+
+        <main id="mine">
+
+            <h1>Mine your <span class="colored">crypto</span></h1>
+
+            <div class="mine-container">
+
+                <div class="mine-box">
+                    <div class="mine-text">
+                        <h1><span class="colored">1.</span> Collect energy</h1>
+                        <p>"You need energy for everything, include mining your cryptos."<br>no cost</p>
+                        <div class="mine-btn">
+                            <button onclick="collectDirtyEnergy()">collect energy</button>
+                        </div>
+                    </div>
+                    <div class="mine-img">
+                        <img src="./assets/img/energy.png" alt="image">
+                    </div>
+                </div>
+
+                <div class="mine-box">
+                    <div class="mine-text">
+                        <h1><span class="colored">2.</span> clean energy</h1>
+                        <p>"For mine crypto you need clean energy."<br>(10 dirty energy)</p>
+                        <div class="mine-btn">
+                            <button onclick="clearEnergy()">clean energy</button>
+                        </div>
+                    </div>
+                    <div class="mine-img">
+                        <img src="./assets/img/clearenergy.png" alt="image">
+                    </div>
+                </div>
+
+                <div class="mine-box">
+                    <div class="mine-text">
+                        <h1><span class="colored">3.</span> Mine crypto</h1>
+                        <p>"Start your empire, mine your crypto."<br>(50 clean energy)</p>
+                        <div class="mine-btn">
+                            <button onclick="mineCrypto()">mine crypto</button>
+                        </div>
+                    </div>
+                    <div class="mine-img">
+                        <img src="./assets/img/minecrypto.png" alt="image">
+                    </div>
+                </div>
+
+                <div class="mine-box">
+                    <div class="mine-text">
+                        <h1><span class="colored">4.</span> Build crypto</h1>
+                        <p>"Build your cryptos, raise your empire."<br>(100 half crypto)</p>
+                        <div class="mine-btn">
+                            <button onclick="buildCrypto()">build crypto</button>
+                        </div>
+                    </div>
+                    <div class="mine-img">
+                        <img src="./assets/img/buildcrypto.webp" alt="image">
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+
+        <section id="store">
+
+            <h1>Deep <span class="colored">store</span></h1>
+
+            <div class="store-container">
+
+                <div class="store-box">
+                    <div class="store-text">
+                        <h1>Level up</h1>
+                        <p>"Increase your level with this product"</p>
+                        <div class="store-btn">
+                            <p>350 half coin/50 coins</p>
+                            <button onclick="buyLevel()">buy level</button>
+                        </div>
+                    </div>
+                    <div class="store-img">
+                        <img src="./assets/img/levelup.png" alt="image">
+                    </div>
+                </div>
+
+                <div class="store-box">
+                    <div class="store-text">
+                        <h1>No delay</h1>
+                        <p>"Remove all delays for 5 minutes."</p>
+                        <div class="store-btn">
+                            <p>450 half coin/70 coins</p>
+                            <button onclick="buyDelay()">buy delay</button>
+                        </div>
+                    </div>
+                    <div class="store-img">
+                        <img src="./assets/img/delay.png" alt="image">
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <script src="./assets/script/script.js"></script>
+    </body>
+</html>

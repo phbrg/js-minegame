@@ -1,0 +1,380 @@
+/* imports */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* imports */
+
+/* scroll */
+::-webkit-scrollbar-thumb {
+  background-color: var(--colorido);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: var(--corFundo);
+}
+/* scroll */
+
+/* pre definicao padrao */
+* {
+  border: none;
+  box-shadow: none;
+  box-sizing: border-box;
+  font-style: normal;
+  font-family: 'Poppins';
+  margin: 0;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  resize: none;
+  outline: none;
+  border: 0;
+  color: var(--corTexto);
+  scroll-behavior: smooth;
+}
+/* pre definicao padrao */
+
+/* root */
+:root {
+  --corTexto: #fff;
+  --corFundo: #111;
+  --colorido: #9534e4;
+}
+/* root */
+
+/* alerta */
+.alerta {
+  z-index: 1;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 15px 25px;
+  background-color: #1f1f1f;
+  border: 2px solid var(--colorido);
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
+  border-radius: 4px;
+  max-width: 35%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.alerta > * {
+  text-align: center;
+  font-weight: 600;
+}
+/* alerta */
+
+/* header */
+header {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  height: 10%;
+  width: 100%;
+  backdrop-filter: blur(2px);
+}
+.logo {
+  font-weight: 700;
+  background-color: var(--corFundo);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.wallet {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-width: 42%;
+  height: auto;
+  background-color: var(--corFundo);
+  padding: 5px 5px;
+  border-radius: 5px;
+}
+.wallet > * {
+  font-weight: 600;
+}
+.wallet p span {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--colorido);
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 12%;
+  height: auto;
+  background-color: var(--corFundo);
+  padding: 5px 5px;
+  border-radius: 5px;
+}
+header nav a {
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0 3px;
+  border-bottom: 2px solid transparent;
+}
+header nav a:hover {
+  margin-bottom: 2%;
+  border-bottom: 2px solid var(--colorido);
+}
+/* header */
+
+/* main */
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background-color: var(--corFundo);
+}
+main h1 {
+  margin: 3% 0 1% 0;
+}
+.mine-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 75%;
+  width: 80%;
+  padding: 5px;
+}
+.mine-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  height: 40%;
+  width: 45%;
+  background-color: #1e1e1e;
+  border-radius: 7px;
+  padding: 10px 5px;
+}
+.mine-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
+}
+.mine-text h1 {
+  font-size: 1.2rem;
+  width: 100%;
+  padding: 0 5px;
+  border-bottom: 2px solid var(--colorido);
+}
+.mine-text p {
+  width: 90%;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: rgb(147, 147, 147);
+}
+.mine-btn {
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+.mine-btn button {
+  width: 90%;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 7px 0;
+  background-color: var(--colorido);
+  border-radius: 3px;
+}
+.mine-btn button:hover {
+  cursor: pointer;
+  filter: brightness(80%);
+}
+.mine-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 40%;
+  overflow: hidden;
+  background-color: #181818;
+  border-radius: 5px;
+  border: 3px solid #282828;
+}
+.mine-img img {
+  height: 80%;
+  border-radius: 10px;
+}
+/* main */
+
+/* store */
+#store {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background-color: var(--corFundo);
+}
+#store > * {
+  margin: 0.5%;
+}
+.store-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 85%;
+  width: 80%;
+  padding: 5px;
+}
+.store-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  height: 40%;
+  width: 45%;
+  background-color: #1e1e1e;
+  border-radius: 7px;
+  padding: 10px 5px;
+}
+.store-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
+}
+.store-text h1 {
+  font-size: 1.2rem;
+  width: 100%;
+  padding: 0 5px;
+  border-bottom: 2px solid var(--colorido);
+}
+.store-text p {
+  width: 90%;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: rgb(147, 147, 147);
+}
+.store-btn {
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+.store-btn button {
+  width: 90%;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 7px 0;
+  background-color: var(--colorido);
+  border-radius: 3px;
+}
+.store-btn button:hover {
+  cursor: pointer;
+  filter: brightness(80%);
+}
+.store-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 40%;
+  overflow: hidden;
+  background-color: #181818;
+  border-radius: 5px;
+  border: 3px solid #282828;
+}
+.store-img img {
+  height: 80%;
+  border-radius: 10px;
+}
+/* store */
+
+/* extras */
+.colored {
+  color: var(--colorido);
+}
+/* extras */
+
+/* responsivo */
+@media screen and (max-width: 1000px) {
+  body header .logo {
+    font-size: 1.4rem;
+  }
+  body header .wallet {
+    width: 55%;
+  }
+  body header .wallet p {
+    font-size: 1.2rem;
+  }
+  body header .wallet p span {
+    font-size: 1.4rem;
+  }
+  body header nav a {
+    font-size: 1rem;
+  }
+  body main h1 {
+    font-size: 3rem;
+  }
+  body .mine-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  body .mine-container > * {
+    margin: 3% 0;
+  }
+  body .mine-box {
+    width: 100%;
+    height: 22%;
+  }
+  body .mine-text h1 {
+    font-size: 2rem;
+  }
+  body .mine-text p {
+    font-size: 1.4rem;
+  }
+  body .mine-btn button {
+    font-size: 1.6rem;
+  }
+  body .mine-img img {
+    height: 70%;
+  }
+  body .store-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  body .store-container > * {
+    margin: 3% 0;
+  }
+  body .store-box {
+    width: 100%;
+    height: 22%;
+  }
+  body .store-text h1 {
+    font-size: 2rem;
+  }
+  body .store-text p {
+    font-size: 1.4rem;
+  }
+  body .store-btn button {
+    font-size: 1.6rem;
+  }
+  body .store-img img {
+    height: 70%;
+  }
+}
+/* responsivo */
