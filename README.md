@@ -4,7 +4,7 @@
 - feito com o intuito unicamente de aplicar meus conhecimentos e aprimora-los
 - feito em: HTML, CSS e Javascript
 
-# 📑 Link
+# 📑 Teste o projeto
 
 [ph-cryptogame](https://ph-cryptogame.vercel.app/)
 
